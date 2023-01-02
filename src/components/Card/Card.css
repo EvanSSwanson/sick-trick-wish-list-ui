@@ -1,0 +1,15 @@
+.card {
+    background-color:lavender;
+    color:darkslategray;
+    box-sizing: border-box;
+    height: 14vw;
+    border-radius: .5vw;
+    width: 30vw;
+    padding: .4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
