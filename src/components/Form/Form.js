@@ -17,9 +17,11 @@ class Form extends Component {
 
   confirmTrick = (event) => {
     event.preventDefault();
-    const newTrick = { id: Date.now(), ...this.state };
-    this.props.addTrick(newTrick);
-    this.resetInputs();
+    if (this.state.stance !== "" && this.state.name !== "" && this.state.obstacle !== "" && this.state.tutorial !== "") {
+        const newTrick = { id: Date.now(), ...this.state };
+        this.props.addTrick(newTrick);
+        this.resetInputs();
+    }
   };
 
   resetInputs = () => {
