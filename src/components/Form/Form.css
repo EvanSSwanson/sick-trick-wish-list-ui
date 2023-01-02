@@ -1,0 +1,14 @@
+.send-it {
+    background-color:crimson;
+    color:aliceblue;
+    border-style: solid;
+    border-width: .3vw;
+    border-color:rgb(118, 11, 32);
+    border-radius: .3vw;
+    cursor: pointer;
+}
+
+.send-it:hover {
+    color:rgb(118, 11, 32);
+    background-color:aliceblue;
+}

@@ -1,6 +1,7 @@
 .card {
     background-color:lavender;
     color:darkslategray;
+    font-size: 1.1vw;
     box-sizing: border-box;
     height: 14vw;
     border-radius: .5vw;

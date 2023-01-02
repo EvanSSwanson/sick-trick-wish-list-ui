@@ -1,0 +1,23 @@
+[
+    {
+    "stance": "regular",
+    "name": "nae-nae",
+    "obstacle": "flat ground",
+    "tutorial": "https://www.youtube.com/watch?v=I_e3G3X-CYA",
+    "id": 1
+    },
+    {
+    "stance": "switch",
+    "name": "crip walk",
+    "obstacle": "flat ground",
+    "tutorial": "https://www.youtube.com/watch?v=jt9mM1jw7PE",
+    "id": 2
+    },
+    {
+    "stance": "regular",
+    "name": "griddy",
+    "obstacle": "football field",
+    "tutorial": "https://www.youtube.com/watch?v=dsrdZD95DH8",
+    "id": 3
+    }
+]
