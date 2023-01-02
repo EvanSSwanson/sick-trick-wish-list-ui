@@ -20,6 +20,7 @@ class Form extends Component {
     if (this.state.stance !== "" && this.state.name !== "" && this.state.obstacle !== "" && this.state.tutorial !== "") {
         const newTrick = { id: Date.now(), ...this.state };
         this.props.addTrick(newTrick);
+        this.props.postTrick(newTrick);
         this.resetInputs();
     }
   };

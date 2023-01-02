@@ -26,6 +26,18 @@ class App extends Component {
       .catch(error => console.log(error));
   }
 
+  postTrick = (newTrick) => {
+    const request = {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(newTrick),
+    };
+    fetch('http://localhost:3001/api/v1/tricks', request)
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+  };
+
   addTrick = (newTrick) => {
     this.setState({ tricks: [...this.state.tricks, newTrick] });
   };
@@ -35,7 +47,7 @@ class App extends Component {
       <div className="App">
         <h1>Sick Trick Wish List</h1>
         <div className="trick-form">
-          <Form addTrick={this.addTrick} />
+          <Form addTrick={this.addTrick} postTrick={this.postTrick}/>
         </div>
         <Tricks tricks={this.state.tricks} />
       </div>
