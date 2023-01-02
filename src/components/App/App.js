@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Tricks from '../Tricks/Tricks';
+import Form from "../Form/Form";
 import './App.css';
 
 class App extends Component {
@@ -25,10 +26,17 @@ class App extends Component {
       .catch(error => console.log(error));
   }
 
+  addTrick = (newTrick) => {
+    this.setState({ tricks: [...this.state.tricks, newTrick] });
+  };
+
   render() {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
+        <div className="trick-form">
+          <Form addTrick={this.addTrick} />
+        </div>
         <Tricks tricks={this.state.tricks} />
       </div>
     );
